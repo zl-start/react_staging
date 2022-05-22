@@ -1,13 +1,13 @@
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          hello react
-        </p>
-      </header>
-    </div>
-  );
+import React, { Component } from "react";
+import Hello from "./components/Hello";
+import Welcome from "./components/Welcome";
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        <Hello />
+        <Welcome />
+      </div>
+    );
+  }
 }
-
-export default App;
